@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import featuresImage1 from "../../Images/featuresImage1.jpeg";
 import "./Features.css"
 
