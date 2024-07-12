@@ -1,0 +1,67 @@
+/* FeatureComponent.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .header-cont {
+    margin-bottom: 20px;
+  }
+  
+  .feature-cont {
+    margin-bottom: 40px;
+  }
+  
+  .featureInnerCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .featureImage-cont {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .featureImage {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+  .featureContaint-cont {
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .featureInnerCont {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .featureImage-cont,
+    .featureContaint-cont {
+      flex: 1;
+      text-align: left;
+    }
+  
+    .featureImage-cont {
+      margin-bottom: 0;
+    }
+  
+    .featureInnerCont.reverse {
+      flex-direction: row-reverse;
+    }
+  
+    .card-body {
+      padding: 20px;
+    }
+  }
+  
