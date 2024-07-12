@@ -5,12 +5,12 @@ import "./Features.css"
 function Features() {
  
   return (
-    <div className="container">
+    <div className="container animation">
       <div className='header-cont text-center my-4'>
         <h1>Features</h1>
       </div>
 
-      <div className="feature-cont mb-5">
+      <div className="feature-cont mb-5 animation">
         <div className="featureInnerCont">
           <div className="featurImage-cont">
             <img src={featuresImage1} className="featureImage" alt="Feature" />
@@ -26,7 +26,7 @@ function Features() {
         </div>
       </div>
 
-      <div className="feature-cont my-5">
+      <div className="feature-cont my-5 animation">
         <div className="featureInnerCont reverse">
           <div className="featurImage-cont">
             <img src={featuresImage1} className="featureImage" alt="Feature" />
@@ -42,7 +42,7 @@ function Features() {
         </div>
       </div>
 
-      <div className="feature-cont my-5">
+      <div className="feature-cont my-5 animation">
         <div className="featureInnerCont">
           <div className="featurImage-cont">
             <img src={featuresImage1} className="featureImage" alt="Feature" />

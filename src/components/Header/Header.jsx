@@ -16,7 +16,7 @@ function Header() {
     ];
 
     return (
-        <header className="w-100 h-16 p-3 p-md-5 d-flex justify-content-between align-items-center position-relative">
+        <header className="w-100 h-16 p-3 p-md-5 d-flex justify-content-between align-items-center sticky-top bg-white">
             <div className="d-flex justify-content-between w-100 align-items-center">
                 <div>
                     <h6 className="h6 fw-bold text-primary">Jillion Technologies</h6>
@@ -32,27 +32,26 @@ function Header() {
                         ))}
                     </ul>
                 </nav>
-
-                 </div>
                 <div className="d-md-none" onClick={() => setIsActive(!isActive)}>
                     <img src={menuImage} alt="Menu" className="menuImage" />
                 </div>
-                <div className={`navbar-collapse ${isActive ? 'show' : ''}`}>
-          <div className="text-right p-2" onClick={() => setIsActive(false)}>
-            <img src={closeIcon} alt="Close" className="closeIcon" />
-          </div>
-          <nav>
-            <ul className="list-unstyled mt-3 ms-3">
-              {navbarItems.map(item => (
-                <li key={item.id} className="p-2 navbarItems">
-                  <Link to={item.url} className="text-decoration-none text-primary fw-semibold">
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+            </div>
+            <div className={`mobile-menu ${isActive ? 'show' : ''}`}>
+                <div className="text-right p-2" onClick={() => setIsActive(false)}>
+                    <img src={closeIcon} alt="Close" className="closeIcon" />
+                </div>
+                <nav>
+                    <ul className="list-unstyled mt-3 ms-3">
+                        {navbarItems.map(item => (
+                            <li key={item.id} className="p-2 navbarItems">
+                                <Link to={item.url} className="text-decoration-none text-primary fw-semibold">
+                                    {item.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 }

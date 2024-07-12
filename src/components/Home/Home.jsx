@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
     <Container className="mt-5 md-mt-2">
-      <div className='main-container d-md-flex d-block'>
+      <div className='main-container d-md-flex d-block animation'>
         <div className='containt-Container'>
           <h1 className='mainHeading'>WE MAKE YOUR IDEA'S <p className='mainHeader'>INTO REALITY</p></h1>
           <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>

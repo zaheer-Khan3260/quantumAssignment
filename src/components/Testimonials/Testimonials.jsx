@@ -6,7 +6,7 @@ import userImage from "../../Images/user.jpeg"
 function Testimonials() {
 
   return (
-    <Container>
+    <Container className='animation'>
       <h1 className='header'>Testimonials</h1>
     <div id="carouselExampleIndicators" className="carousel slide my-5 mainContainer" data-bs-ride="carousel">
     <div className="carousel-indicators">

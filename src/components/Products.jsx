@@ -9,7 +9,7 @@ function Products() {
   ];
 
   return (
-    <Container className="my-5 ">
+    <Container className="my-5 animation ">
       <h2 className="text-center mb-5">Products</h2>
       <Row>
         {products.map((product, index) => (

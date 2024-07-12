@@ -4,7 +4,7 @@ import contactImage from "../Images/contact.jpeg"
 
 function Contact() {
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 animation">
       <h2 className="text-center mb-4">Contact Us</h2>
       <div className='d-md-flex mt-5'>
       <div className='contactImageCont d-none d-md-block'>
